@@ -1,0 +1,1328 @@
+/* 
+Project name: Optosoft test
+Libraries: Bootstrap 4.4, Font Awesome 5.
+--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+## Layouts
+# Components
+	0- Theming
+    1- Header
+       -utilities
+       -Navigation
+    2- Main 
+       -Body 
+       -Card 
+       -Forms 
+    3- Footer 
+    4- Media queries
+    5- Typography
+--------------------------------------------------------------*/
+
+
+/* 0. The theming contains all the fonts */
+ 
+@import url("home.css"); 
+@import url("login.css"); 
+:root { 
+    /* police colors definition */
+    --main-color-red: rgb(251, 1, 2);
+    --main-color-light-blue: rgb(34, 72, 187);
+    --main-color-grey-light: hsl(0, 0%, 86%);
+    --main-color-yellow: rgb(251, 254, 0);
+    --main-color-green: rgb(4, 64, 6);
+    /* the core colors */
+    --emp-primary-header-bg: rgb(4, 64, 6);
+    --emp-primary-header-bg-no-a: rgba(19, 131, 130);
+    --emp-primary-body-bg: hsl(0, 0%, 96%);
+    --emp-secondary-color: rgb(4, 64, 6);
+    /* white color */
+    --emp-white-color: #f5f5f5;
+    --emp-pure-white-color: #ffffff;
+    /* black color with transparent*/
+    --emp-dark-color: rgba(0, 0, 0, 0.54);
+    --main-text-shadow: 1px 1px 2px #000000;
+    /* black color */
+    --emp-pure-black-color: #000000;
+    --emp-btn-danger: rgb(4, 64, 6);
+    --emp-btn-warning: rgb(251, 254, 0);
+    --emp-grey: rgb(133, 133, 133);
+    --emp-header-label-color: #fafafa;
+    --emp-border-grey: rgb(221, 218, 218);
+    --emp-table-header-bg: rgb(230, 238, 238);
+    /* header font size */
+    --main-header-font-size: 1rem;
+    /* search field background color */
+    --emp-dark-transparent-search: rgba(0, 0, 0, 0.267);
+    /* top header height */
+    --emp-header-height: 55px;
+    --emp-card-header-height: 40px;
+    /* side menu icon color */
+    --emp-side-nav-icon-bg: rgb(223, 222, 222);
+    --emp-side-nav-icon-bg-danger: rgb(104, 12, 14);
+    
+    --emp-side-nav-icon-color: rgb(22, 22, 22);
+    --emp-side-nav-text-color: rgb(75, 75, 75);
+    --emp-side-nav-label-font-size: .8rem;
+    --emp-faded-black: rgba(0, 0, 0, 0.9);
+    --emp-header-shadow: 3px 4px 6px rgba(214, 217, 223, 0.5);
+    --main-color-section-darkblue-a: rgb(4, 64, 6);
+    --main-color-darkblue-a: rgb(4, 64, 6);
+    --main-color-section-blue-a: rgb(4, 64, 6);
+    --main-color-section-sidebar-bg-a: rgb(255, 255, 255);
+    --main-color-section-sidebar-bg-dark: rgb(255, 255, 255);
+}
+
+
+/* 
+ 1. Header section component
+    
+ */
+
+
+/* Utilities */
+
+.pcolor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.section-color-tage1 {
+    background-color: var(--main-color-green)
+}
+
+.section-color-tage2 {
+    background-color: var(--main-color-light-blue)
+}
+
+.section-color-tage3 {
+    background-color: var(--main-color-yellow)
+}
+
+.section-color-tage4 {
+    background-color: var(--main-color-green)
+}
+
+.section-color-tage5 {
+    background-color: var(--main-color-light-blue)
+}
+
+.section-item-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+/*  ######  2.  Main component ######   */
+
+
+/*########################### Body styles */
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--emp-primary-body-bg);
+}
+
+body::-webkit-scrollbar {
+    width: .3em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(42, 43, 41);
+    outline: 1px solid slategrey;
+}
+
+div.job_description ul li {
+    text-decoration: none !important;
+    font-size: 13px;
+    list-style: none;
+}
+
+
+/* Body container */
+
+.emp-container {
+    display: grid;
+    grid-auto-rows: 10% 70% 20%;
+}
+
+.emp-main-row {
+    margin-left: -25px !important;
+}
+
+
+/* body cards */
+
+.card {
+    box-shadow: 1px 2px 4px rgba(223, 214, 223, 0.5)!important;
+}
+
+.emp-card-header {
+    height: var(--emp-card-header-height);
+    padding: 5px;
+    padding-left: 9px;
+    background: none;
+    font-size: 16px;
+    color: #3E3E3E;
+    margin-top: 0px;
+}
+
+.emp-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emp-dash-bg {
+    background-color: var(--emp-primary-body-bg);
+}
+
+.emp-grid-list {
+    margin-bottom: 10px;
+}
+
+.emp-grid-list>a {
+    color: var(--emp-primary-header-bg);
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.emp-card {
+    background: var(--emp-pure-white-color);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(214, 217, 223, 0.5);
+}
+
+.emp-li.list-group-item {
+    padding-left: 0px !important
+}
+
+.emp-time-ago {
+    font-size: 11px;
+    margin: 1px !important;
+}
+.emp-text{
+    color: #680c0e
+}
+.emp-task {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 21px;
+    font-style: normal;
+    color: var(--emp-color-dark)
+}
+
+.emp-task-activity {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.5418);
+    margin: 0px;
+}
+
+.state_title {
+    font-size: .85rem !important;
+    font-weight: bold;
+}
+
+#scroll-style::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#scroll-style::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#scroll-style::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#scroll-style::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+    background-color: var(--emp-primary-header-bg);
+}
+
+.emp-task-activity.stat_title {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.logo-text {
+    font-size: .98rem;
+}
+
+.logo-text-below {
+    font-size: .70rem;
+    margin-bottom: 10px
+}
+
+.emp-task-user {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    font-style: normal;
+    color: var(--emp-primary-header-bg);
+    padding-left: 10px;
+}
+
+.emp-task-link {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+    font-style: normal;
+    color: var(--emp-primary-header-bg);
+    text-decoration: none !important;
+}
+
+.emp-task-link:hover {
+    border: 1px solid #ccc;
+    padding: 1px;
+    color: var(--emp-primary-header-bg);
+    text-decoration: none !important;
+}
+
+.emp-list-group-item {
+    position: relative;
+    display: block;
+    padding: 5px 0px 5px 0px !important;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.emp-card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.emp-task-content {
+    font-size: 12px;
+}
+
+.emp-task-content2 {
+    font-size: 15px;
+}
+
+.activity-profile {
+    widows: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid var(--emp-dark-color)
+}
+
+.emp-app-activity {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.5418);
+    margin: 0px;
+}
+
+.emp-app-user {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    font-style: normal;
+    color: var(--emp-primary-header-bg);
+    padding-left: 4px;
+}
+
+.emp-app-time-ago {
+    width: auto;
+    font-size: 11px;
+}
+
+div.mb-1.emp-task {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.emp-job-activity {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.dropdown-menu,
+.dropdown-item {
+    margin-top: 4px;
+    min-width: 200px;
+    padding: 12 12px 12 12px;
+    background-color: var(--emp-pure-black-color) !important;
+    color: var(--emp-pure-white-color) !important;
+    font-size: var(--emp-side-nav-label-font-size);
+    font-weight: 600;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+a.dropdown-item:hover {
+    font-weight: 600;
+}
+
+.profile-img {
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    padding: 2px !important;
+}
+
+.profile-img .emp-profile-logo {
+    width: 40px;
+    height: auto;
+}
+
+.emp-avarter {
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.menu-hide {
+    display: none;
+}
+
+.menu-show {
+    display: inline-block;
+    transition: height 4s, width 4s, padding 4s, visibility 4s, opacity 4s ease-out;
+}
+
+li.nav-item {
+    padding: 0px !important;
+}
+
+a.nav-link {
+    color: var(--emp-pure-black-color);
+    padding: 8px 14px 8px 14px;
+}
+
+.imp-talent {
+    position: relative;
+    top: 8px;
+}
+
+.imp-talent-container {
+    top: 40;
+    right: 0;
+    margin-top: -4px;
+}
+
+.filter-items .nav-link {
+    text-decoration: none;
+    color: var(--emp-dark-color);
+}
+
+div.dropdown-menu.filter-dropdown-text div.dropdown-item {
+    background-color: var(--emp-pure-white-color) !important;
+    color: var(--emp-dark-color)!important;
+}
+
+div.dropdown-menu.filter-dropdown-text.show {
+    background-color: var(--emp-pure-white-color) !important;
+}
+
+
+/* .filtericon{
+    position: absolute;
+    margin-
+} */
+
+.filter-item-dropdown {
+    width: 140px;
+    height: 25px;
+    font-size: 13px;
+}
+
+.dropdown-toggle:after {
+    content: none
+}
+
+.filter-itemss {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-item-dropdowns {
+    width: 140px;
+    height: 30px;
+    font-size: 13px;
+    background: none;
+    border-radius: 3px;
+    border: 1px solid var(--emp-border-grey);
+}
+
+.filter-itemss>label {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+div.filter-dropdown-text {
+    box-shadow: 6px 7px 6px rgba(214, 217, 223, 0.5);
+    border-radius: 5px;
+}
+
+div.dropdown-menu.filter-dropdown-text div.dropdown-item {
+    /* background-color: var(--emp-white-color) !important; */
+    color: var(--emp-dark-color)!important;
+}
+
+.emp-resume-btn {
+    padding: 3px !important;
+    font-size: 11px;
+    border: 1px solid var(--emp-dark-transparent-search)
+}
+
+li.page-item a.page-link {
+    color: var(--emp-dark-color)
+}
+
+.resume-select {
+    background-color: var(--emp-primary-header-bg);
+    border-radius: 3px;
+    height: 28px;
+    color: var(--emp-pure-white-color)
+}
+
+.resume-select>option {
+    color: var(--emp-primary-header-bg) !important;
+}
+
+.emp-position-btn {
+    border-radius: 30px !important;
+    border: 1px solid var(--emp-dark-color)
+}
+
+.emp-position-btn>i {
+    border-radius: 50px !important;
+    border: 1px solid var(--emp-dark-color)
+}
+
+.resume-small-gride {
+    padding: 8px;
+}
+
+.emp-keysearch {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid var(--emp-primary-header-bg);
+}
+
+.page-link1 {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    background-color: var(--emp-white-color)
+}
+
+.page-link2 {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    background-color: var(--emp-white-color)
+}
+
+.download-btn {
+    padding: 3px;
+    border: 1px solid var(--emp-dark-color)
+}
+
+.download-btn:hover {
+    padding: 3px;
+    border: 1px solid var(--emp-dark-color) !important;
+    background-color: var(--emp-white-color) !important;
+    color: var(--emp-dark-color)
+}
+
+.emp-experience {
+    border: 5px solid var(--emp-grey);
+    padding: 0px;
+    border-radius: 0px;
+}
+
+.job-filter-items label {
+    font-size: 15px;
+}
+
+.job-filter-items .job-filter-item-dropdowns {
+    background-color: var(--emp-pure-white-color) !important;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    width: 90px
+}
+
+.job-function {
+    font-size: 11px;
+    padding: 2px;
+    background-color: #F5A623;
+    color: var(--emp-pure-white-color);
+}
+
+.job-function-user {
+    padding-left: 5px;
+    color: var(--emp-dark-color)
+}
+
+select.job-filter-item-dropdowns option {
+    background-color: var(--emp-pure-white-color) !important;
+    border: none !important;
+}
+
+.emp-add {
+    background-color: var(--emp-primary-header-bg);
+    color: var(--emp-pure-white-color);
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.emp-job-post input,
+.emp-job-post select {
+    border-left: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-radius: 0px !important;
+}
+
+.emp-center-gride-fade {
+    background: var(--emp-faded-black);
+    /* position: fixed;
+    width: 100vw;
+    height: 100vh; */
+    opacity: .1;
+    /* z-index: 1000;  */
+}
+
+
+/* input::placeholder {
+    color: var(--emp-dark-color)!important;
+} */
+
+
+/* ################################ Forms */
+
+input:focus {
+    border-color: none !important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+select:hover,
+select:active,
+select:focus,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    /* -webkit-appearance:none; */
+    box-shadow: none !important;
+    border-color: var(--emp-primary-header-bg) !important;
+}
+
+input[type="checkbox"] {
+    border: 1px solid var(--emp-primary-header-bg)
+}
+
+
+/* Hide the browser's default checkbox */
+
+.emp-chk-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+
+    margin-top: 20px;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.emp-chk-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.emp-chk-container input:checked~.checkmark {
+    background-color: var(--emp-primary-header-bg);
+    margin-right: 10px;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.emp-chk-container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.emp-chk-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.emp-chk-container {
+    margin-left: 10px;
+}
+
+input[type="search"] {
+    background: var(--emp-dark-transparent-search) !important;
+    color: #fff !important;
+    border: none;
+    font-size: 13px;
+}
+
+input::placeholder {
+    color: rgb(221, 211, 211) !important;
+}
+
+.search::placeholder {
+    color: var(--emp-dark-color) !important;
+}
+
+input.search {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+}
+
+input.form-input,
+select.form-input {
+    padding: 5px 6px 6px 6px;
+    margin: 0;
+    border: 1px solid #ccc;
+    padding: 5px 6px 6px 6px;
+}
+
+select {
+    background-color: #dddddd;
+}
+
+select {
+    border-radius: 0px;
+    border-color: rgb(169, 169, 169);
+}
+
+select {
+    border-radius: 0px;
+    border-color: rgb(169, 169, 169);
+}
+
+select {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+
+select {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+select>option {
+    background-color: #dddddd !important;
+}
+
+select option:hover {
+    background-color: var(--emp-primary-header-bg) !important;
+    box-shadow: 0 0 10px 100px var(--emp-primary-header-bg) inset;
+}
+
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px var(--emp-primary-header-bg) inset !important;
+}
+
+.filter-form {
+    position: relative;
+}
+
+.form-check-label {
+    font-size: 13px;
+}
+
+
+/* 
+  ## #################### 4. Footer section component
+  ##    
+ */
+
+.emp-footer2 {
+    /* background-color: var(--emp-primary-header-bg); */
+    background: -webkit-linear-gradient(var(--main-color-section-blue-a), var(--main-color-section-darkblue-a))!important;
+    background: linear-gradient(var(--main-color-section-blue-a), var(--main-color-section-darkblue-a))!important;
+    box-shadow: 3px 4px 6px rgba(214, 217, 223, 0.5);
+    width: 100%;
+    font-size: 15px !important;
+}
+
+.emp-footer {
+    background-color: var(--emp-white-color);
+    box-shadow: 3px 4px 6px rgba(214, 217, 223, 0.5);
+    /* position: fixed; */
+    /* bottom: 0px; */
+    width: 100%;
+    font-size: 15px !important;
+}
+
+.emp-footer-inner {
+    background-color: var(--emp-primary-header-bg);
+    box-shadow: 3px 4px 6px rgba(214, 217, 223, 0.5);
+    /* position: fixed;
+    bottom: 0px; */
+    width: 100%;
+    z-index: 0;
+    font-size: 15px !important;
+}
+
+ul.footer-nav-mobile {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 50%; */
+    /* padding-right: 50%; */
+}
+
+p.footer-title {
+    color: #f3f3f3;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.footer-nav-mobile>li>a {
+    text-decoration: none;
+    color: var(--emp-pure-black-color);
+}
+
+.footer-nav-mobile>li>a {
+    margin-right: 80px;
+    color: rgba(0, 0, 0, 0.479);
+    width: 80px;
+    text-align: center;
+}
+
+.emp-footer {
+    font-size: 10px;
+    padding: 5px;
+}
+
+
+/* 
+  ##  5. Typology section contains 
+  ##   styles for all  html element and buttons
+ */
+
+.emp-btn {
+    background-color: var(--emp-secondary-color);
+    border: none;
+    color: var(--emp-pure-white-color);
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+.emp-login-btn {
+    background-color: var( --emp-primary-header-bg);
+    border: none;
+    color: var(--emp-pure-black-color);
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+.emp-btn-dark {
+    background-color: var(--emp-primary-header-bg);
+    border: none;
+    color: var(--emp-white-color);
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+    padding: 3px !important;
+}
+
+.emp-bg-dark {
+    background-color: var(--emp-primary-header-bg);
+    border: none;
+    color: var(--emp-white-color);
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+    padding: 3px !important;
+}
+
+.emp-btn-dark:hover {
+    color: var(--emp-secondary-color);
+}
+
+.emp-btn:hover {
+    background-color: var(--emp-secondary-color);
+    border: none;
+}
+
+.emp-btn-primary {
+    background-color: var(--emp-secondary-color);
+    border: none;
+    color: var(--emp-pure-white-color) !important;
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+
+/* .emp-btn-danger {
+    background-color: var(--emp-primary-header-bg) !important;
+    color: var(--emp-dark-color) !important
+} */
+
+.emp-btn-danger {
+    border-radius: 0px !important;
+    background-color: var(--emp-btn-danger);
+    color: var(--emp-pure-white-color);
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+    padding: 2px 3px 2px 3px;
+    font-size: 10px
+}
+
+.emp-btn-danger:hover {
+    border-radius: 0px !important;
+    border: 1px solid var(--emp-pure-white-color) !important;
+    ;
+    background-color: var(--emp-btn-danger);
+    color: var(--emp-pure-white-color);
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+.emp-btn-warning {
+    border-radius: 0px !important;
+    background-color: var(--emp-btn-warning);
+    color: var(--emp-dark-color);
+    font-weight: bold;
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+    padding: 2px 3px 2px 3px;
+    font-size: 10px
+}
+
+.emp-btn-warning:hover {
+    border-radius: 0px !important;
+    border: 1px solid var(--emp-pure-white-color) !important;
+    ;
+    background-color: var(--emp-btn-warning);
+    color: var(--emp-pure-white-color);
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+.emp-tablebg-light {
+    background-color: var(--emp-table-header-bg);
+    border-bottom: 0px;
+}
+
+.emp-primary-btn {
+    background-color: var(--emp-primary-header-bg);
+    color: var(--emp-pure-white-color)
+}
+
+ul.emp-info-side-bar {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.emp-info-side-bar li {
+    padding-bottom: 7px;
+    font-size: 13px !important;
+}
+
+ul.emp-info-side-bar li h5 {
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.emp-secondary-btn {
+    background-color: var(--emp-secondary-color);
+    color: var(--emp-dark-color)
+}
+
+.emp-color {
+    color: var(--emp-primary-header-bg)
+}
+
+.emp-color-secondary {
+    color: var(--emp-secondary-color);
+}
+
+.emp-color-dark {
+    color: var(--emp-dark-color)
+}
+
+.add-result {
+    padding: 10px;
+    border-radius: 50px;
+    /* background-color: var(--emp-primary-header-bg); */
+    color: var(--emp-pure-white-color);
+    border: 1px solid var(--emp-primary-header-bg);
+}
+
+
+/* mobile menu icon */
+
+.btn-mob {
+    background-color: #0000003d;
+    width: 40px;
+    color: var(--emp-pure-white-color) !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-mob>.navbar-toggler-icon>.fa {
+    color: #fff !important;
+    font-size: 28px !important;
+}
+
+.emp-nav-link.active {
+    color: #030505 !important;
+}
+
+a.emp-nav-link:focus,
+a.emp-nav-link:hover,
+a.emp-nav-link {
+    color: #0f8d7f !important;
+    font-size: 12px !important;
+}
+
+.emp-filter-label {
+    font-size: 14px;
+}
+
+.emp-job-title {
+    font-size: 22px;
+    margin-top: 0px;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.card-body h3 {
+    background: none !important;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: none;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #364d4d;
+}
+
+.emp-job-side-bar li b {
+    font-size: 14px;
+    color: #364d4d;
+    font-weight: 700;
+}
+
+.emp-job-side-bar li {
+    display: block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.job-detail-job-location {
+    font-size: 14px !important;
+    color: #000 !important;
+}
+
+.emp-job-title-page {
+    font-size: 23px;
+    margin-bottom: 25px
+}
+
+.emp-manage-user-form input,
+.emp-manage-user-form select {
+    border-radius: 0px;
+}
+
+.emp-employee-manage {
+    position: absolute;
+    right: 0;
+    padding: 10px
+}
+
+.emp-manage-card {
+    width: 15rem;
+    text-align: center;
+}
+
+.emp-manage-card>img {
+    text-align: center;
+}
+
+.emp-report-subtitle {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.report-sig-view-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fa-circle {
+    font-size: 7px;
+    color: var(--emp-primary-header-bg)
+}
+
+.dash-link {
+    font-size: 14px;
+    font-weight: bold
+}
+
+.team-img-cont {
+    margin-right: -34px;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.team-info-cont {
+    box-shadow: 2px 3px 5px rgba(214, 217, 223, 0.5);
+}
+
+.team-name {
+    font-size: 16px;
+}
+
+.team-role {
+    font-size: 13px;
+}
+
+.team-status {
+    font-size: 11px;
+    color: var(--emp-pure-white-color)
+}
+
+.footer-icons {
+    font-size: 23px;
+    text-align: center;
+}
+
+.footer-nav-mobile>.nav-item>.nav-link.active-item {
+    background-color: var(--emp-dark-color);
+    /* border-radius: 20px 20px 20px 20px; */
+    padding: 2px !important;
+}
+
+
+/* ********************** Check */
+
+
+/* Base for label styling */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+
+/* Base for label styling */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+
+/* checkbox aspect */
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+}
+
+
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+    content: '\2713\0020';
+    position: absolute;
+    top: .15em;
+    left: .22em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: var(--emp-primary-header-bg);
+    transition: all .2s;
+    font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+
+
+/* checked mark aspect changes */
+
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* disabled checkbox */
+
+[type="checkbox"]:disabled:not(:checked)+label:before,
+[type="checkbox"]:disabled:checked+label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+
+[type="checkbox"]:disabled:checked+label:after {
+    color: #999;
+}
+
+[type="checkbox"]:disabled+label {
+    color: #aaa;
+}
+
+
+/* accessibility */
+
+[type="checkbox"]:checked:focus+label:before,
+[type="checkbox"]:not(:checked):focus+label:before {
+    border: 2px dotted var(--emp-primary-header-bg);
+}
+
+
+/* hover style just for information */
+
+label:hover:before {
+    border: 2px solid var(--emp-btn-danger) !important;
+}
+
+.emp-sep {
+    margin: 0px !important;
+}
+
+.proprietory {
+    font-size: 12px !important;
+}
+
+.emp-log-subheading {
+    font-size: 11px;
+}
+
+div .dropdown-item {
+    background-color: var(--emp-dark-color) !important;
+    color: var(--emp-pure-white-color) !important;
+}
+
+.emp-ins-border{
+    position: relative;
+}
+
+.emp-ins-border .card-loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 200;
+    background-color: rgba(240, 248, 255, 0.479);
+}
