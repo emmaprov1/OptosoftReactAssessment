@@ -1,0 +1,341 @@
+{   
+    "products": [     
+        {       
+            "name": "Red Bench",       
+            "category": "people",       
+            "price": 3.89,       
+            "currency": "USD",       
+            "image": {         
+                "src": "",         
+                "alt": ""      
+                 },       
+            "bestseller": true,       
+            "featured": false,       
+            "details": null     
+        },     
+        {       
+            "name": "Egg Balloon",       
+            "category": "food",       
+            "price": 93.89,       
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",         
+                "alt": "Egg Balloon"      
+                 },        
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },     
+        {       
+            "name": "Man",       
+            "category": "people",       
+            "price": 100,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/2896853/pexels-photo-2896853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "Man"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Woman",       
+            "category": "people",       
+            "price": 100,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/8964924/pexels-photo-8964924.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "woman"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Girl",       
+            "category": "people",       
+            "price": 150,      
+            "currency": "USD",
+            "image": {        
+                "src": "https://images.pexels.com/photos/7530429/pexels-photo-7530429.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "girl"       
+                },    
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Boy",       
+            "category": "people",       
+            "price": 150,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/3626690/pexels-photo-3626690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "boy"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Cat",       
+            "category": "Pets",       
+            "price": 790,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/4587959/pexels-photo-4587959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",         
+                "alt": "cat"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Teddy bear",       
+            "category": "Pets",       
+            "price": 150,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/4652006/pexels-photo-4652006.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "teddy bear"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Dog",       
+            "category": "Pets",       
+            "price": 100,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/3945402/pexels-photo-3945402.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "dog"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Prrot",       
+            "category": "Pets",       
+            "price": 790,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/56733/pexels-photo-56733.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "parot"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "New york",       
+            "category": "Cities",       
+            "price": 900,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "new york"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Hung kong",       
+            "category": "Cities",       
+            "price": 790,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "hong kong"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Paris",       
+            "category": "Cities",       
+            "price": 330,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "Paris"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "London",       
+            "category": "Cities",       
+            "price": 210,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/2304917/pexels-photo-2304917.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "London"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Austrialia",       
+            "category": "Cities",       
+            "price": 180,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/3859774/pexels-photo-3859774.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "Austrialia"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Flower",       
+            "category": "Nature",       
+            "price": 500,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/2106037/pexels-photo-2106037.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": ""       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Vegetation",       
+            "category": "Nature",       
+            "price": 900,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/3571551/pexels-photo-3571551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",         
+                "alt": "Vegetation"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Plantation",       
+            "category": "Nature",       
+            "price": 100,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/1005417/pexels-photo-1005417.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "Plantation"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Green field",       
+            "category": "Nature",       
+            "price": 100,      
+            "currency": "USD",       
+            "image": {         
+                "src": "",         
+                "alt": ""       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Water fall",       
+            "category": "Nature",       
+            "price": 180,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/1020016/pexels-photo-1020016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",         
+                "alt": "water fall"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Lagos",       
+            "category": "Premium",       
+            "price": 180,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/1770808/pexels-photo-1770808.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",         
+                "alt": "Lagos"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },   
+        {       
+            "name": "Washinton",       
+            "category": "Premium",       
+            "price": 100,      
+            "currency": "USD",       
+            "image": {         
+                "src": "https://images.pexels.com/photos/2100018/pexels-photo-2100018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",         
+                "alt": "washinton"       
+                },      
+            "bestseller": false,       
+            "featured": false,       
+            "details": null     
+        },     
+        {       
+            "name": "Architecture",       
+            "category": "landmarks",       
+            "price": 101,       
+            "currency": "USD",      
+            "dimmentions": {         
+                "width": 1020,         
+                "height": 1020      
+                },       
+            "image": {
+                "src":"https://images.pexels.com/photos/137594/pexels-photo-137594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "alt":"Architecture"
+            },       
+            "bestseller": false,       
+            "featured": false,
+            "details": null     
+        },     
+        {      
+            "name": "Samurai King Restling",      
+            "category": "landmarks",       
+            "price": 101,      
+            "currency": "USD",       
+            "image": {         
+                "src": "",         
+                "alt": ""       
+                },       
+            "bestseller": false,       
+            "featured": true,       
+            "details": {         
+                "dimmentions": {           
+                    "width": 1020,           
+                    "height": 1020         
+                    },         
+            "size": 15000,         
+            "description": "So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely",     
+            "recommendations": [           
+                {             
+                    "src": "",             
+                    "alt": ""           
+                },           
+                {            
+                     "src": "",             
+                     "alt": ""           
+                },           
+                {             
+                    "src": "",             
+                    "alt": ""           
+                    }         
+                ]       
+                }    
+             }   
+        ]
+}

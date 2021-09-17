@@ -1,0 +1,26 @@
+.card-head-text {
+    color: #747474;
+    font-size: 14px;
+}
+.emp-ins-dash-badge{
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgb(37, 38, 39)
+}
+.emp-home-card-border {
+    border: 5px solid #cecccc;
+    border-radius: 10px;
+}
+.emp-ins-dash-count{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.stats-card-desc{
+    border-top: 1px solid rgba(19, 18, 18, 0.322);
+    width:100%;
+    font-size: .7rem;
+}
+
+.emp-ins-border{
+    cursor: pointer;
+}

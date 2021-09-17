@@ -1,0 +1,7 @@
+export { default as productsReducer } from './products/productsReducer'
+export { default as toggleReducer } from './Filters/ToggleReducer'
+export { default as CartReducer } from './Cart/CartReducer'
+export { default as featuredProductsReducer } from './products/featuredProductsReducer'
+export { default as sortReducer } from './products/sortReducer'
+export { default as catSortReducer } from './products/catSortReducer'
+export { default as priceSortReducer } from './products/priceSortReducer'

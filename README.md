@@ -1,3 +1,13 @@
+# Overview
+TOOLS:
+1. Reactjs
+2. Typescript
+3. Bootstrap
+4. font awesome
+5. saas
+5. firebase
+7. redux
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
