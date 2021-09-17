@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OptosoftReactAssessment/static/css/main.ad81bd26.chunk.css",
+    "main.css": "/OptosoftReactAssessment/static/css/main.61c114a1.chunk.css",
     "main.js": "/OptosoftReactAssessment/static/js/main.ad7955f4.chunk.js",
     "main.js.map": "/OptosoftReactAssessment/static/js/main.ad7955f4.chunk.js.map",
     "runtime-main.js": "/OptosoftReactAssessment/static/js/runtime-main.05329c84.js",
@@ -12,14 +12,14 @@
     "static/js/3.4db6fbc8.chunk.js.map": "/OptosoftReactAssessment/static/js/3.4db6fbc8.chunk.js.map",
     "index.html": "/OptosoftReactAssessment/index.html",
     "static/css/2.150d169a.chunk.css.map": "/OptosoftReactAssessment/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.ad81bd26.chunk.css.map": "/OptosoftReactAssessment/static/css/main.ad81bd26.chunk.css.map",
+    "static/css/main.61c114a1.chunk.css.map": "/OptosoftReactAssessment/static/css/main.61c114a1.chunk.css.map",
     "static/js/2.61e4df1b.chunk.js.LICENSE.txt": "/OptosoftReactAssessment/static/js/2.61e4df1b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.05329c84.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.61e4df1b.chunk.js",
-    "static/css/main.ad81bd26.chunk.css",
+    "static/css/main.61c114a1.chunk.css",
     "static/js/main.ad7955f4.chunk.js"
   ]
 }
