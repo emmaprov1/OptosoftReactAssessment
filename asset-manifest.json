@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/OptosoftReactAssessment/static/css/main.9ca290e7.chunk.css",
-    "main.js": "/OptosoftReactAssessment/static/js/main.800f9c7d.chunk.js",
-    "main.js.map": "/OptosoftReactAssessment/static/js/main.800f9c7d.chunk.js.map",
+    "main.js": "/OptosoftReactAssessment/static/js/main.1501e9b4.chunk.js",
+    "main.js.map": "/OptosoftReactAssessment/static/js/main.1501e9b4.chunk.js.map",
     "runtime-main.js": "/OptosoftReactAssessment/static/js/runtime-main.05329c84.js",
     "runtime-main.js.map": "/OptosoftReactAssessment/static/js/runtime-main.05329c84.js.map",
     "static/css/2.150d169a.chunk.css": "/OptosoftReactAssessment/static/css/2.150d169a.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.150d169a.chunk.css",
     "static/js/2.dc0d5a2f.chunk.js",
     "static/css/main.9ca290e7.chunk.css",
-    "static/js/main.800f9c7d.chunk.js"
+    "static/js/main.1501e9b4.chunk.js"
   ]
 }
